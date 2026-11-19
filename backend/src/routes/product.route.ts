@@ -4,3 +4,4 @@ import * as ProductController from "../controllers/product.controller";
 export const productsRouter = express.Router();
 
 productsRouter.get("/", ProductController.getProducts);
+productsRouter.get("/genres", ProductController.getGenres);
